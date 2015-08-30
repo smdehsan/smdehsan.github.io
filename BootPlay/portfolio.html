@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewpoer" width="device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>BootPlay</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="master.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/share.css">
+		<link rel="stylesheet" href="css/keyfrem.css">
+	</head>
+
+	<body>
+		
+		<div id="main">
+			<div class="container-fluid">
+				<div class="row">
+					<section class="resume_box">
+						<div class="row nomargin">
+							<div class="col-md-2 nopadding">
+								<div class="back text-center">
+									<a href="index.html">
+										<i class="fa fa-long-arrow-left"></i>
+									</a>
+								</div>
+							</div>
+							
+							<div class="col-md-8 nopadding">
+								<div class="title text-center">
+									
+									<h1>
+										These are few of my
+										<span>
+											Sweet Clild
+										</span>
+									</h1>
+								</div>
+							</div>
+						</div>
+
+						<div class="row nomargin">
+							<div class="portfolio_page">
+								<!-- Nav tabs -->
+								<ul class="nav nav-tabs mixitup-filter" role="tablist">
+								    <li role="presentation" class="filter active" data-filter="all">
+								    	<a href="#all" aria-controls="all" role="tab" data-toggle="tab">All</a>
+								    </li>
+								    <li role="presentation" class="filter" data-filter=".emailtemp">
+								    	<a href="#emailtemp" aria-controls="emailtemp" role="tab" data-toggle="tab">
+								    		Email Template
+								    	</a>
+								    </li>
+								    <li role="presentation" class="filter" data-filter=".webdesign">
+								    	<a href="#webdesign" aria-controls="webdesign" role="tab" data-toggle="tab">
+								    		Web Design
+								    	</a>
+								    </li>
+								</ul>
+
+								<!-- Tab panes -->
+								<div class="tab-content" id="mixlist">
+								    <div role="tabpanel" class="tab-pane active fade in" id="all" data-my-order="1">
+								    	<div class="row first_row masonry-container">
+
+								    		<div class="col-md-2 mix all emailtemp item grid-item">
+												<a href="img/big-eml-01.png" data-imagelightbox="a">
+													<img class="thumbnail" src="img/small-eml-01.png" alt="Klaipeda in the night">
+												</a>
+								    		</div>
+
+								    		<div class="col-md-2 mix all emailtemp item grid-item">
+												<a href="img/big-eml-02.png" data-imagelightbox="a">
+													<img class="thumbnail" src="img/small-eml-02.png" alt="Klaipeda in the night">
+												</a>
+								    		</div>
+
+								    		<div class="col-md-2 mix all emailtemp item grid-item">
+												<a href="img/big-eml-03.png" data-imagelightbox="a">
+													<img class="thumbnail" src="img/small-eml-03.png" alt="Klaipeda in the night">
+												</a>
+								    		</div>
+
+								    		<div class="col-md-2 mix all emailtemp item grid-item">
+												<a href="img/big-eml-04.jpg" data-imagelightbox="a">
+													<img class="thumbnail" src="img/small-eml-04.jpg" alt="Klaipeda in the night">
+												</a>
+								    		</div>
+
+								    		<div class="col-md-2 mix all emailtemp item grid-item">
+												<a href="img/big-eml-05.jpg" data-imagelightbox="a">
+													<img class="thumbnail" src="img/small-eml-05.jpg" alt="Klaipeda in the night">
+												</a>
+								    		</div>
+								    		
+								    		<div class="col-md-2 mix all emailtemp item grid-item">
+												<a href="img/big-eml-06.png" data-imagelightbox="a">
+													<img class="thumbnail" src="img/small-eml-06.png" alt="Klaipeda in the night">
+												</a>
+								    		</div>
+
+								    		<div class="col-md-2 mix all emailtemp item grid-item">
+												<a href="img/big-eml-07.png" data-imagelightbox="a">
+													<img class="thumbnail" src="img/small-eml-07.png" alt="Klaipeda in the night">
+												</a>
+								    		</div>
+								    	</div>
+								    </div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<section class="footer">
+					</section>
+
+				</div>
+			</div>
+		</div>
+
+
+		<!--|-|-|-|-|-| Jquery|-|-|-|-|-|-->
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/TweenMax.min.js"></script>
+		<script src="js/share.js"></script>
+		<script src="js/jquery.easypiechart.min.js"></script>
+		<script src="js/imagelightbox.min.js"></script>
+		<script src="js/main.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script>
+		<script src="js/jquery.mixitup.min.js"></script>
+
+		
+		
+		
+		<!--|-|-|-|-|-| ImageLightBox |-|-|-|-|-|-->
+		<script>
+		    $( function()
+		    {
+		        $( 'a' ).imageLightbox();
+		    });
+		</script>
+
+		<!--|-|-|-|-|-| EasyPieChart |-|-|-|-|-|-->
+		<script>
+		    $(function() {
+		        $('.chart').easyPieChart({
+		            //your options goes here
+		        });
+		    });
+		</script>
+
+		<!--|-|-|-|-|-| Mixitup |-|-|-|-|-|-->
+		<script>
+			$('#mixlist').mixItUp({
+				animation: {
+					effects:'fade rotateY(-10deg)'
+				}
+			});
+		</script>
+
+		<!--|-|-|-|-|-| Masonry |-|-|-|-|-|-->
+		<script>
+				(function ($) {
+				    var $container = $('.masonry-container');
+				    $container.imagesLoaded(function () {
+				        $container.masonry({
+				            columnWidth: '.item',
+				            itemSelector: '.item'
+				        });
+				    });
+				    $('a[data-toggle=tab]').each(function () {
+				        var $this = $(this);
+				        $this.on('shown.bs.tab', function () {
+				            $container.imagesLoaded(function () {
+				                $container.masonry({
+				                    columnWidth: '.item',
+				                    itemSelector: '.item'
+				                });
+				            });
+				        });
+				    });
+				}(jQuery));
+	   	</script>
+
+
+	</body>
+</html>

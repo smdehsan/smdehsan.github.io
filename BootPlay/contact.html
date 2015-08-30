@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewpoer" width="device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>BootPlay</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="master.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/share.css">
+	<link rel="stylesheet" href="css/keyfrem.css">
+	
+</head>
+
+
+<body>
+	
+	
+	<div id="contact">
+		<section class="info">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-4 nopadding">
+						<section class="left_column">
+							<div class="row nomargin">
+								<div class="col-md-1">
+									<div class="back">
+										<a href="index.html">
+											<i class="fa fa-long-arrow-left"></i>
+										</a>
+									</div>
+								</div>
+								<img src="img/popeye.png" alt="">
+							</div>
+							<div class="row nomargin">
+								<div class="address text-center">
+									<i class="fa fa-map-marker"></i>
+									<p>
+									H.N#26, Ehsan Manzil,
+									<br>
+									Sheikhpara, Boalia,
+									<br>
+									Gop-6000,Rajshahi
+									<br>
+									Bangladesh
+									</p>
+								</div>
+							</div>
+						</section>
+					</div>
+
+					<div class="col-md-8 nopadding">
+						<section class="right_column">
+							<form id="contact-form" class="contact_form" method="post" action="">
+								<h2 class=" text-center">Contact Me</h2>
+
+								<div class="form-group">
+		                            <input type="text" class="form-control" id="name" placeholder="Enter name" required="required" />
+		                        </div>
+
+		                        <div class="form-group">
+		                            <input type="email" class="form-control" id="email" placeholder="Enter email" required="required" />
+		                        </div>
+
+		                        <div class="form-group">
+		                            <textarea name="message" id="message" class="form-control" rows="3" cols="25" required="required"
+		                                placeholder="Message"></textarea>
+		                        </div>
+		                        <div class="form-group">
+		                            <input type="submit" class="btn btninfo" id="email" placeholder="Submit" />
+		                        </div>
+	                        </form>
+	                        <div id="map"></div>
+						</section>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="footer">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-2 nopadding">
+						<div class="dob">
+							<i class="fa fa-birthday-cake"></i>
+							<p>02 April 1989</p>
+						</div>
+					</div>
+					<div class="col-md-2 nopadding">
+						<div class="skype">
+							<i class="fa fa-skype"></i>
+							<p>sayed.mohammad.ehsan</p>
+						</div>
+					</div>
+					<div class="col-md-4 nopadding">
+						<div class="email">
+							<i class="fa fa-envelope-o"></i>
+							<a href="mailto:info@smehsan.com" target="_blank">
+								smehsan@outlook.com
+							</a>
+						</div>
+					</div>
+					<div class="col-md-2 nopadding">
+						<div class="web">
+							<i class="fa fa-wifi"></i>
+							<a href="http://www.smehsan.com" target="_blank">
+								www.smehsan.com
+							</a>
+						</div>
+					</div>
+					<div class="col-md-2 nopadding">
+						<div class="phone">
+							<i class="fa fa-phone"></i>
+							<p>0088-01558311311</p>
+						</div>
+					</div>
+					<!-- <div class="col-md-2 nopadding">
+						<div class="address">
+							<i class="fa fa-map-marker"></i>
+							<p>H.N#26, Ehsan Manzil, Sheikh Para,GPO-6000, Boalia, Rajshahi, Bangladesh</p>
+						</div>
+					</div> -->
+				</div>
+			</div>
+		</section>
+
+	</div>
+
+
+	<!--|-|-|-|-|-| Jquery|-|-|-|-|-|-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/TweenMax.min.js"></script>
+	<script src="js/share.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+
+	<!--|-|-|-|-|-| Google Map|-|-|-|-|-|-->
+	<script>
+		var myCenter=new google.maps.LatLng(51.508742,-0.120850);
+
+		function initialize()
+		{
+		var mapProp = {
+			center:myCenter,
+			zoom:7,
+			panControl:false,
+			zoomControl:false,
+			mapTypeControl:false,
+			scaleControl:false,
+			streetViewControl:false,
+			overviewMapControl:false,
+			rotateControl:false,
+			scrollwheel: false,
+		  mapTypeId:google.maps.MapTypeId.ROADMAP
+		  };
+
+		var map=new google.maps.Map(document.getElementById("map"),mapProp);
+
+		var marker=new google.maps.Marker({
+		  position:myCenter,
+		  });
+
+		marker.setMap(map);
+
+		var infowindow = new google.maps.InfoWindow({
+		  content:"Hello World!"
+		  });
+
+		infowindow.open(map,marker);
+		}
+
+		google.maps.event.addDomListener(window, 'load', initialize);
+	</script>
+
+</body>
+</html>

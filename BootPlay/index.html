@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewpoer" width="device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>BootPlay</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="master.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/share.css">
+	<link rel="stylesheet" href="css/keyfrem.css">
+
+
+
+
+</head>
+<body>
+	
+	<div class="texture-overlay"></div>
+	<div id="main">
+		<section class="header">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-offset-3 col-md-2 col-sm-6 col-xs-12 nopadding">
+						<div class="colOne">
+							<img class="avatar" src="img/avatar.jpg" alt="">
+						</div>
+					</div>
+
+					<div class="col-md-5 col-sm-6 col-xs-12 nopadding">
+						<div class="colTwo">
+							<h1>Sayed Mohammad Ehsan</h1>
+							<p>Front End Web Developer.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="social">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-offset-4 col-md-4">
+						<div class="social-icons">
+							<p class="text-center">Click To Share</p>
+
+							<div class="share">
+								<button class="share-toggle-button">
+									<i class="share-icon fa fa-share-alt"></i>
+								</button>
+								<ul class="share-items">
+									<li class="share-item">
+										<a href="#" class="share-button">
+											<i class="share-icon fa fa-facebook"></i>
+										</a>
+									</li>
+									<li class="share-item">
+										<a href="#" class="share-button">
+											<i class="share-icon fa fa-twitter"></i>
+										</a>
+									</li>
+									<li class="share-item">
+										<a href="#" class="share-button">
+											<i class="share-icon fa fa fa-google-plus"></i>
+										</a>
+									</li>
+									<li class="share-item">
+										<a href="#" class="share-button">
+											<i class="share-icon fa fa-github"></i>
+										</a>
+									</li>
+									<li class="share-item">
+										<a href="#" class="share-button">
+											<i class="share-icon fa fa-youtube"></i>
+										</a>
+									</li>
+									<li class="share-item">
+										<a href="#" class="share-button">
+											<i class="share-icon fa fa-linkedin"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="category">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<div class="profile">
+							<a class="img" href="profile.html"></a>
+
+							<a class="text" href="profile.html">
+								Profile
+							</a>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="resume">
+							<a class="img" href="resume.html"></a>
+
+							<a class="text" href="resume.html">
+								Resume
+							</a>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="portfolio">
+							<a class="img" href="portfolio.html"></a>
+
+							<a class="text" href="portfolio.html">
+								Portfolio
+							</a>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="contacts">
+							<a class="img" href="contact.html"></a>
+
+							<a class="text" href="contact.html">
+								Contacts
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="footer">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-2 nopadding">
+						<div class="dob">
+							<i class="fa fa-birthday-cake"></i>
+							<p>02 April 1989</p>
+						</div>
+					</div>
+					<div class="col-md-2 nopadding">
+						<div class="skype">
+							<i class="fa fa-skype"></i>
+							<p>sayed.mohammad.ehsan</p>
+						</div>
+					</div>
+					<div class="col-md-4 nopadding">
+						<div class="email">
+							<i class="fa fa-envelope-o"></i>
+							<a href="mailto:info@smehsan.com" target="_blank">
+								smehsan@outlook.com
+							</a>
+						</div>
+					</div>
+					<div class="col-md-2 nopadding">
+						<div class="web">
+							<i class="fa fa-wifi"></i>
+							<a href="http://www.smehsan.com" target="_blank">
+								www.smehsan.com
+							</a>
+						</div>
+					</div>
+					<div class="col-md-2 nopadding">
+						<div class="phone">
+							<i class="fa fa-phone"></i>
+							<p>0088-01558311311</p>
+						</div>
+					</div>
+					<!-- <div class="col-md-2 nopadding">
+						<div class="address">
+							<i class="fa fa-map-marker"></i>
+							<p>H.N#26, Ehsan Manzil, Sheikh Para,GPO-6000, Boalia, Rajshahi, Bangladesh</p>
+						</div>
+					</div> -->
+				</div>
+			</div>
+		</section>
+	</div>
+
+
+	<!--|-|-|-|-|-| Jquery|-|-|-|-|-|-->
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/TweenMax.min.js"></script>
+	<script src="js/share.js"></script>
+	
+	<!--|-|-|-|-|-| Jquery|-|-|-|-|-|-->
+	<script>
+
+			/*jQuery*/
+
+			$(function(){
+				var ink, d, x, y;
+				$(".ripplelink").hover(function(e){
+			    if($(this).find(".ink").length === 0){
+			        $(this).prepend("<span class='ink'></span>");
+			    }
+			         
+			    ink = $(this).find(".ink");
+			    ink.removeClass("animate");
+			     
+			    if(!ink.height() && !ink.width()){
+			        d = Math.max($(this).outerWidth(), $(this).outerHeight());
+			        ink.css({height: d, width: d});
+			    }
+			     
+			    x = e.pageX - $(this).offset().left - ink.width()/2;
+			    y = e.pageY - $(this).offset().top - ink.height()/2;
+			     
+			    ink.css({top: y+'px', left: x+'px'}).addClass("animate");
+			});
+			});
+	</script>
+</body>
+</html>
