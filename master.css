@@ -1,0 +1,758 @@
+@font-face {
+  font-family: "proximanova-bold, sans-serif;";
+  src: url("fonts/proximanova-bold.eot?") format("eot"),
+  url("fonts/proximanova-bold.woff") format("woff"),
+  url("fonts/proximanova-bold.ttf") format("truetype");
+}
+
+
+@font-face {
+  font-family: "proximanova-extrabold, sans-serif;";
+  src: url("fonts/proximanova-extrabold.eot?") format("eot"),
+  url("fonts/proximanova-extrabold.woff") format("woff"),
+  url("fonts/proximanova-extrabold.ttf") format("truetype");
+}
+
+
+@font-face {
+  font-family: "proximanova-light, sans-serif;";
+  src: url("fonts/proximanova-light.eot?") format("eot"),
+  url("fonts/proximanova-light.woff") format("woff"),
+  url("fonts/proximanova-light.ttf") format("truetype");
+}
+
+
+@font-face {
+  font-family: "proximanova-regular, sans-serif;";
+  src: url("fonts/proximanova-regular.eot?") format("eot"),
+  url("fonts/proximanova-regular.woff") format("woff"),
+  url("fonts/proximanova-regular.ttf") format("truetype");
+}
+
+
+@font-face {
+  font-family: "proximanova-semibold, sans-serif;";
+  src: url("fonts/proximanova-semibold.eot?") format("eot"),
+  url("fonts/proximanova-semibold.woff") format("woff"),
+  url("fonts/proximanova-semibold.ttf") format("truetype");
+}
+
+
+@font-face {
+  font-family: "proximanova-thin, sans-serif;";
+  src: url("fonts/proximanova-thin.eot?") format("eot"),
+  url("fonts/proximanova-thin.woff") format("woff"),
+  url("fonts/proximanova-thin.ttf") format("truetype");
+}
+
+
+
+
+/***********Bootstrap Override***********/
+
+html,body{
+
+	background-color: #2ecc71;
+	padding: 10px;
+  font-family: "proximanova-regular, sans-serif;";
+}
+a:link,a:hover,a:visited{
+  color: #3498db;
+  text-decoration: none;
+}
+
+
+p,a,span,h1,h2,h3,h4,h5,h6,{
+  font-family: "proximanova-regular, sans-serif;";
+}
+
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+  background-color: rgb(46, 204, 113);
+}
+
+
+
+
+/***********Custom Style***********/
+
+#main{
+	background-color: #fff;
+  background-image: url(img/grid.png);
+}
+
+
+.nopadding{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.nomargin{
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+
+p{
+font-family: "proximanova-regular, sans-serif;";
+font-size: 18px;	
+}
+
+
+
+.header{
+  padding:32px 0px 32px 0px;
+}
+
+.colOne{
+	text-align: center;
+}
+
+
+.colOne img.avatar{
+	width: 150px;
+    border-radius: 75px;
+    height: 150px;
+    background-color: #FFF;
+}
+
+.colTwo{
+	text-align: center;
+}
+
+.colTwo h1{
+	font-family: "proximanova-bold, sans-serif;";
+}
+
+.colTwo h1{
+	font-family: "proximanova-bold, sans-serif;";
+}
+
+.social{
+  padding:0px 0px 16px 0px;
+}
+
+.category{
+  text-align: center;
+  padding:16px 0px 36px 0px;
+}
+
+
+.category img{
+  width: 100px;
+  height: auto;
+}
+
+.category p{
+  margin-top: 16px;
+}
+
+
+.category a.img{
+    display: inline-block;
+ }
+
+ .category a.text{
+    display: block;
+    margin-top: 16px;
+    font-weight: 600;
+    font-size: 16px;
+ }
+
+
+.profile a.img{
+    background-image: url(img/profile_small.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100px;
+    height: 100px;
+ }
+
+.profile a.img:hover{
+/*    border: 10px solid;
+    border-radius: 55px;
+    box-shadow: 0px 0px 40px 0px;
+-webkit-transition: all .5s linear;
+-moz-transition: all .5s linear;
+-ms-transition: all .5s linear;
+-o-transition: all .5s linear;
+transition: all .5s linear;*/
+}
+
+.resume a.img{
+    background-image: url(img/resume_small.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100px;
+    height: 100px;
+ }
+
+
+.portfolio a.img{
+    background-image: url(img/portfolio_small.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100px;
+    height: 100px;
+ }
+
+.contacts a.img{
+    background-image: url(img/contact_small.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100px;
+    height: 100px;
+ }
+
+
+.footer{
+
+}
+
+.footer p{
+  font-size: 14px;
+  margin-bottom: 0px;
+}
+
+
+
+.footer .dob{
+  text-align: center;
+  padding: 16px 0px;
+  background-color: #1abc9c;
+  color: #FFFFFF;
+}
+
+
+.footer .skype{
+  text-align: center;
+  padding: 16px 0px;
+  background-color: #34495e;
+  color: #FFFFFF;
+}
+
+
+.footer .email{
+  text-align: center;
+  padding: 16px 0px;
+  background-color: #9b59b6;
+  color: #FFFFFF;
+}
+
+.footer .email a{
+  display: block;
+  color: #FFFFFF;
+}
+
+
+.footer .web{
+  text-align: center;
+  padding: 16px 0px;
+  background-color: #d35400;
+  color: #FFFFFF;
+}
+
+.footer .web a{
+  display: block;
+  color: #FFFFFF;
+}
+
+
+.footer .phone{
+  text-align: center;
+  padding: 16px 0px;
+  background-color: #2980b9;
+  color: #FFFFFF;
+}
+
+.footer .address{
+  text-align: center;
+  padding: 16px 0px;
+  background-color: #e74c3c;
+  color: #FFFFFF;  
+}
+
+
+
+
+
+
+
+
+
+/****************************************
+            Profile Page
+****************************************/
+#profile{
+    background-color: #FFFFFF;
+    background-image: url(img/grid.png);
+}
+
+
+.left_column{
+    padding: 16px 32px 16px 0px;
+    border-right: 1px solid #EEE;
+    text-align: center;
+}
+
+.left_column .back{
+    display: inline-block;
+    padding: 10px 30px;  
+    font-size: 32px;
+}
+
+.left_column img{
+    width: 200px;
+    height: 325px;
+}
+
+
+.right_column{
+    padding: 16px 32px;
+}
+
+.right_column h2{
+    font-family: "proximanova-bold, sans-serif;";
+}
+
+.right_column .btn{
+    margin: 32px 16px;
+}
+
+
+.pro_profile{
+  padding: 16px 0px;
+}
+
+.pro_profile .title{
+    /*margin-bottom: 16px;*/
+}
+
+.pro_profile .title h2{
+    border-bottom: 5px solid;
+    display: inline-block;
+    padding-bottom: 10px;
+    border-color: #DEF3F9;
+}
+    
+
+.pro_profile .service{
+    padding: 0px 0px 0px 0px;
+}
+
+
+.pro_profile .service .webdesign{
+  transition: all 0.3s;
+  padding: 16px 0px;
+}
+
+.pro_profile .service .webdesign:hover{
+    background: rgba(162, 222, 253, 0.3);
+}
+
+.service .webdesign .fa{
+    border: 10px solid rgba(91, 192, 222, 0.2);
+    border-radius: 50px;
+    padding: 15px;
+    font-size: 48px;
+    color: rgb(91, 192, 222);
+}
+
+
+.pro_profile .service .graphics_design:hover{
+    background: rgba(162, 222, 253, 0.3);
+}
+
+
+.service .graphics_design {
+  padding: 16px 0px;
+  transition: all 0.3s;
+}
+
+.service .graphics_design .fa{
+    border: 10px solid rgba(91, 192, 222, 0.2);
+    border-radius: 50px;
+    padding: 15px;
+    font-size: 48px;
+    color: rgb(91, 192, 222);
+}
+
+
+.service .etml_dev {
+  padding: 16px 0px;
+  transition: all 0.3s;
+}
+
+
+.pro_profile .service .etml_dev:hover{
+    background: rgba(162, 222, 253, 0.3);
+}
+
+.service .etml_dev .fa{
+    border: 10px solid rgba(91, 192, 222, 0.2);
+    border-radius: 50px;
+    padding: 15px;
+    font-size: 48px;
+    color: rgb(91, 192, 222);
+}
+
+
+
+
+
+
+
+
+
+
+/****************************************
+            Resume Page
+****************************************/
+
+.resume_box{
+  overflow: hidden;
+}
+
+
+.resume_box .back{
+    display: inline-block;
+    padding: 0px 16px;
+    font-size: 32px; 
+    margin-top: 14px;
+}
+
+
+.resume_box .title{
+  font-family: "proximanova-bold, sans-serif;";
+}
+
+
+.resume_box .title span{
+  color: #3498db;
+  font-family: "proximanova-bold, sans-serif;";
+}
+
+
+.resume_box .work_experience{
+  padding: 16px;
+  background-color: #8e44ad;
+}
+
+
+.resume_box .work_experience .job{
+  margin-bottom: 16px;
+}
+
+
+.resume_box .work_experience h1{
+  margin-bottom: 32px;
+}
+
+
+.resume_box .work_experience .org_one{
+  background-color: rgba(255, 255, 255, 0.36);
+  padding: 8px;
+  transition:.3s;
+}
+
+.resume_box .work_experience .org_one p{
+  margin-bottom: 0px;
+}
+
+.resume_box .work_experience .org_one:hover{
+  background-color: rgba(255, 255, 225, 1);
+  padding: 5px;
+}
+
+.resume_box .work_experience .designation{
+  background-color: rgba(255, 255, 255, 0.36);
+  padding: 8px;
+  transition:.3s;
+}
+
+
+.resume_box .work_experience .designation p{
+  margin-bottom: 0px;
+}
+
+.resume_box .work_experience .designation:hover{
+  background-color: rgba(255, 255, 255, 1);
+  padding: 5px;
+}
+
+
+
+.resume_box .skills{
+  padding: 16px;
+  background-color: #1abc9c;
+}
+
+
+.resume_box .success{
+  padding: 16px;
+  background-color: #3498db;
+  margin-top: -100px;
+}
+
+.resume_box .success h1{
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+
+.resume_box .success .facts p{
+  margin-top: 16px;
+}
+
+
+.resume_box .success .facts .fa{
+  font-size: 80px;
+}
+
+.resume_box .success .facts span{
+  font-size: 32px;
+}
+
+.resume_box .work_process{
+  padding: 16px;
+  background-color: #e74c3c;
+}
+
+.resume_box .work_process h4{
+  font-weight: bold;
+}
+
+.resume_box .work_process p{
+  margin-top: 2px;
+  transform: skewY(7deg);
+}
+
+.resume_box .work_process .fa{
+    font-size: 45px;
+    border: 2px solid;
+    padding: 5px;
+    width: 130px;
+    transform: skewy(10deg);
+}
+
+
+
+
+/****************************************
+            Portfolio Page
+****************************************/
+
+.portfolio_page{
+  padding: 32px;
+}
+
+.tab-content{
+  margin-top: 20px;
+}
+
+.tab-content .second_row{
+  margin-top: 10px;
+}
+
+
+
+
+
+/****************************************
+            Contact Page
+****************************************/
+
+#contact{
+    background-color: #FFFFFF;
+    background-image: url(img/grid.png);
+}
+
+#contact .left_column{
+  border-right: 0px;
+  padding: 16px 0px 16px 0px;
+}
+
+#contact .left_column .address{
+  margin-top: 32px;
+}
+
+.fa-map-marker{
+    font-size: 75px !important;
+    color: #1ABC9C;
+}
+
+#contact .left_column .address p{
+ 
+}
+
+
+#contact .right_column{
+  border-left:1px solid #EEE;
+}
+
+#contact .right_column .btn{
+  margin: 0px;
+}
+
+
+.form-control{
+    border-bottom: 3px solid;
+    border-radius: 0px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    outline: none;
+    box-shadow: none;
+    font-size: 18px;
+    height: 40px;
+    padding-left: 0px;
+    margin-bottom: 0px;
+}
+
+.form-group:focus{
+    outline: none;
+}
+
+.form-control:focus{
+    webkit-box-shadow: 0 1px 1px rgba(0,0,0,.0),0 0 8px rgba(0,0,0,.0)); 
+    box-shadow: 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(0,0,0,.0);
+
+}
+
+
+
+#map {
+    width: 100%;
+    height: 200px;
+    background-color: #CCC;
+  }
+
+
+
+
+
+/****************************************
+            PieChart
+****************************************/
+
+.chart {
+  position: relative;
+  display: inline-block;
+  width: 110px;
+  height: 110px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+.chart canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.percent {
+  display: inline-block;
+  line-height: 110px;
+  z-index: 2;
+}
+.percent:after {
+  content: '%';
+  margin-left: 0.1em;
+  font-size: .8em;
+}
+.angular {
+  margin-top: 100px;
+}
+.angular .chart {
+  margin-top: 0;
+}
+input {
+  display: block;
+  margin: auto;
+  margin-bottom: 3em;
+}
+
+
+.span6 {
+  float: left;
+  width: 50%;
+}
+@media only screen and (max-width: 600px) {
+  li {
+    font-size: 14.4px;
+  }
+}
+@media only screen and (max-width: 430px) {
+  .span6 {
+    float: none;
+    width: 100%;
+  }
+  body {
+    padding-top: 0;
+  }
+  ul {
+    height: auto;
+    position: static;
+  }
+  li {
+    display: block;
+    width: 100%;
+  }
+  li a {
+    white-space: normal;
+  }
+  a.active:after {
+    display: none;
+  }
+}
+
+
+
+
+
+/****************************************
+            MixitUp
+****************************************/
+
+#mixlist img{
+  width: 100%;
+  height: 200px;
+}
+
+#mixlist .mix{
+  display: none;
+}
+
+
+
+
+/****************************************
+            ImageLighBox
+****************************************/
+
+#imagelightbox{
+    position: fixed;
+    z-index: 9999;
+    -ms-touch-action: none;
+    touch-action: none;
+    border: 10px solid #EEE;
+    border-radius: 10px;
+}
+
+
+/****************************************
+            Masonry
+****************************************/
+
+.masonry-container{
+
+}
+
+
+
+
+/****************************************
+            Css Keyfrem Effects
+****************************************/
+/* Ripple In */
+
+
