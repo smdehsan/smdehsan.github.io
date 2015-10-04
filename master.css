@@ -231,6 +231,10 @@ transition: all .5s linear;*/
   color: #FFFFFF;
 }
 
+.footer .skype a{
+  display: block;
+  color: #FFFFFF;	
+}
 
 .footer .email{
   text-align: center;
